@@ -18,7 +18,7 @@ func shuffle(arr []string) {
 
 func pop(list []string) string {
 
-	return list[len(list)-1] //Retourne le dérnier élément de la live
+	return list[len(list)-1] //Retourne le dérnier élément de la liste
 }
 
 func main() {
@@ -27,7 +27,6 @@ func main() {
 
 	for i := 0; i < len(list); i++ {
 
-		// supprimer l'élément à l'index i de a.
 		list[i] = list[len(list)-1] // Copier le dernier élément à l'index i.
 		list[len(list)-1] = ""      // Effacer le dernier élément (écrire la valeur zéro).
 		list = list[:len(list)-1]   // Tranche tronquée.
@@ -37,6 +36,7 @@ func main() {
 		element := pop(list) // On récupère le premier élément du tableau en l'enlevant
 
 		fmt.Printf("Ton Rôle : %v \n", element) // On affiche l'élement et le nouveau tableau
+
 	}
 
 }

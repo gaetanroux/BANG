@@ -2,15 +2,43 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
 )
 
-func RemoveIndex(s []int, index int) []int {
-	return append(s[:index], s[index+1:]...)
+func shuffle(arr []string) {
+	t := time.Now()
+	rand.Seed(int64(t.Nanosecond())) // no shuffling without this line
+
+	for i := len(arr) - 1; i > 0; i-- {
+		j := rand.Intn(i)
+		arr[i], arr[j] = arr[j], arr[i]
+	}
+}
+
+func pop(list []string) string {
+
+	return list[len(list)-1] //Retourne le dérnier élément de la liste
 }
 
 func main() {
-	all := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-	fmt.Println(all) //[0 1 2 3 4 5 6 7 8 9]
-	n := RemoveIndex(all, 5)
-	fmt.Println(n) //[0 1 2 3 4 6 7 8 9]
+
+	var list = []string{"Shérif", "Bandit", "Bandit", "Renégat"}
+	for {
+
+		for i := 0; i < len(list); i++ {
+
+			list[i] = list[len(list)-1] // Copier le dernier élément à l'index i.
+			list[len(list)-1] = ""      // Effacer le dernier élément (écrire la valeur zéro).
+			list = list[:len(list)-1]   // Tranche tronquée.
+
+			shuffle(list) // On mélange le tableau
+
+			element := pop(list) // On récupère le premier élément du tableau en l'enlevant
+
+			fmt.Printf("Ton Rôle : %v \n", element) // On affiche l'élement et le nouveau tableau
+		}
+
+	}
+
 }
