@@ -26,15 +26,20 @@ def desc(SelectRole):
 
     # Aide pour connaître les rôles
     if SelectRole == "Hors-la-loi":
-        print("Les Hors-la-loi gagnent la partie dès qu'ils ont éliminé le Shérif. En fonction du nombre de joueurs, il y a 2 ou 3 Hors-la-loi.")
+        print("Les Hors-la-loi gagnent la partie dès qu'ils ont éliminé le Shérif. En fonction du nombre de joueurs, il y a 2 ou 3 Hors-la-loi.\n")
     
     if SelectRole == "Shérif":
-        print("Tu incarne le shérif est tu es le seul à dire ton rôle. Ton objectif est d'éliminer le(s) renégat(s) et les Hors-la-loi.")
+        print("Tu incarne le shérif est tu es le seul à dire ton rôle. Ton objectif est d'éliminer le(s) renégat(s) et les Hors-la-loi.\n")
 
     if SelectRole == "Renégat":
-        print("Le Renégat doit supprimer les Hors-la-loi et Adjoint(s), et ensuite le Shérif, mais seulement en dernier, sinon ce sont les Hors-la-loi qui gagnent.")
+        print("Le Renégat doit supprimer les Hors-la-loi et Adjoint(s), et ensuite le Shérif, mais seulement en dernier, sinon ce sont les Hors-la-loi qui gagnent.\n")
 
     if SelectRole == "Adjoint":
-        print("Les joueurs jouant les Adjoints gardent leur rôle secret mais doivent néanmoins veiller à ce que le Shérif survive. En fonction du nombre de joueurs, il y a 0, 1 ou 2 Adjoints.")
+        print("Les joueurs jouant les Adjoints gardent leur rôle secret mais doivent néanmoins veiller à ce que le Shérif survive. En fonction du nombre de joueurs, il y a 0, 1 ou 2 Adjoints.\n")
+
+    caractere()
+
+def caractere():
+    print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
 
 main()
