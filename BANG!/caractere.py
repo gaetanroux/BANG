@@ -27,6 +27,9 @@ print("\n")
 
 start = input("Quel carte choissez-vous ?")
 print("\n")
-if int(start) == "Sam le vautour":
-        print("Tu es Sam le vautour tu vas devoir ") 
-        exit()
+#if int(start) == "Sam le vautour":
+ #       print("Tu es Sam le vautour tu vas devoir ") 
+ #       exit()
+
+if str("Jourdonnais"):
+    print("ta mère suce des ours")
