@@ -6,12 +6,15 @@ carte = ["Hors-la-loi", "Renégat", "Shérif", "Hors-la-loi"]
 
 def main():
     debutgame(carte)
+    
     randoms(debutgame)
 
 
 def randoms(debutgame):
 
     random.shuffle(carte) # Mélange les cartes
+    
+    print("\n")
     print("Les rôles qui pourrez-vous être attribué :")
     print(carte) # Affiche la liste mélanger
     print("\n")
