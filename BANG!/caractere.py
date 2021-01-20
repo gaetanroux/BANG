@@ -25,8 +25,9 @@ print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 
 print(sample(caract,4))
 print("\n")
 
-start = input("Quel carte choissez-vous ?")
-print("\n")
-if int(start) == "Sam le vautour":
-        print("Tu es Sam le vautour tu vas devoir ") 
+start = input("Quel carte choissez-vous ?""\n")
+#if input is not in sample
+print("error")
+if str=="Sam le vautour":
+        print("Tu es Sam le vautour, dès qu’un personnage est éliminé de la partie, Sam prend toutes les cartes que ce joueur avait en main et en jeu, et il les ajoute à sa propre main. Tu as 4 points de vies !") 
         exit()

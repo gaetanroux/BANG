@@ -7,7 +7,7 @@ window = Tk()
 window.title("BANG!")
 window.geometry("1080x720")
 window.minsize(480, 360)
-window.iconbitmap("c:/Users/Paul/Desktop/YDAYS/Algo&Jeu de société/BANG!/ui/logo.ico")
+window.iconbitmap("C:/Users/gaeta/Desktop/Algo jeux de societé/BANG/BANG!/ui/logo.ico")
 window.config(background='#41B77F')
 
 #ajouter un premier texte
