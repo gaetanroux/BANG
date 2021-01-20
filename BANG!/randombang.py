@@ -4,14 +4,14 @@ from startbang import *
 
 carte = ["Hors-la-loi", "Renégat", "Shérif", "Hors-la-loi"]
 
-
 def main():
     debutgame(carte)
+    
     randoms(debutgame)
-    
-    
+
 
 def randoms(debutgame):
+
     random.shuffle(carte) # Mélange les cartes
     
     print("\n")
@@ -19,10 +19,7 @@ def randoms(debutgame):
     print(carte) # Affiche la liste mélanger
     print("\n")
 
-    
-
     SelectRole = carte.pop() # Récupère et supprime le dernier élément de la liste
-
     print('Voici ton rôle :', SelectRole)
 
     desc(SelectRole)

@@ -1,3 +1,4 @@
+
         
 def debutgame(carte):
 
