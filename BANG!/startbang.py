@@ -1,11 +1,14 @@
+        
 def debutgame(carte):
-   pseudo = []
 
+    pseudo = []
+    
     start = input("Combien de joueur êtes vous :")
 
     if int(start) < 4:
         print("Vous n'êtes pas assez pour lancer une partie (4 minimum).") 
         exit()
+
 
 
     if int(start) == 4:
@@ -92,3 +95,4 @@ def debutgame(carte):
         g = input("Entrez le prénom ou le surnom du joueur 7 :\n").split()
         pseudo = pseudo + g
 
+print("La partie commence...\n")
