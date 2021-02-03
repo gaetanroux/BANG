@@ -1,11 +1,7 @@
 
         
 def debutgame(carte):
-<<<<<<< HEAD
-    
-    pseudo = []
-=======
->>>>>>> fc2c744a348349b274c5331d856d552e82609586
+
 
     pseudo = []
     

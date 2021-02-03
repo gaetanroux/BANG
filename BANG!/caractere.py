@@ -20,7 +20,6 @@ caract = ["Bart Cassidy pv:4",
 "Willy le Kid pv:4"]
 
 
-<<<<<<< HEAD
 
 def perso():
 
@@ -35,10 +34,3 @@ def perso():
  #       print("Tu es Sam le vautour tu vas devoir ") 
  #       exit()
 
-=======
-random.shuffle(caract)
-print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
-print(sample(caract,4))
-print("\n")
-start = input("Que carte choissez-vous ?")
->>>>>>> fc2c744a348349b274c5331d856d552e82609586
