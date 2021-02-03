@@ -2,7 +2,8 @@
 
 
 def debutgame(carte):
-   pseudo = []
+    
+    pseudo = []
 
     start = input("Combien de joueur êtes vous :")
 

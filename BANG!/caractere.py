@@ -20,16 +20,17 @@ caract = ["Bart Cassidy",
 "Willy le Kid"]
 
 
-random.shuffle(caract)
-print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
-print(sample(caract,4))
-print("\n")
 
-start = input("Quel carte choissez-vous ?")
-print("\n")
+def perso():
+
+    random.shuffle(caract)
+    print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
+    print(sample(caract,4))
+    print("\n")
+
+    start = input("Quel carte choissez-vous ?")
+    print("\n")
 #if int(start) == "Sam le vautour":
  #       print("Tu es Sam le vautour tu vas devoir ") 
  #       exit()
 
-if str("Jourdonnais"):
-    print("ta mère suce des ours")

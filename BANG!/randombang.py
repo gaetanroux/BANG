@@ -1,17 +1,19 @@
 import random
 from startbang import *
+from caractere import *
 
 
 carte = ["Hors-la-loi", "Renégat", "Shérif", "Hors-la-loi"]
 
-
+1
 def main():
     debutgame(carte)
     randoms(debutgame)
-    
+    perso()
     
 
 def randoms(debutgame):
+
     random.shuffle(carte) # Mélange les cartes
     
     print("\n")
@@ -43,9 +45,8 @@ def desc(SelectRole):
     if SelectRole == "Adjoint":
         print("Les joueurs jouant les Adjoints gardent leur rôle secret mais doivent néanmoins veiller à ce que le Shérif survive. En fonction du nombre de joueurs, il y a 0, 1 ou 2 Adjoints.\n")
 
-    caractere()
-
-def caractere():
-    print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
+     
+# def caractere(perso):
+   # print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
 
 main()
