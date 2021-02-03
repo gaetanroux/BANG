@@ -5,12 +5,19 @@ from caractere import *
 
 carte = ["Hors-la-loi", "Renégat", "Shérif", "Hors-la-loi"]
 
+<<<<<<< HEAD
 1
 def main():
     debutgame(carte)
     randoms(debutgame)
     perso()
+=======
+def main():
+    debutgame(carte)
+>>>>>>> fc2c744a348349b274c5331d856d552e82609586
     
+    randoms(debutgame)
+
 
 def randoms(debutgame):
 
@@ -21,10 +28,7 @@ def randoms(debutgame):
     print(carte) # Affiche la liste mélanger
     print("\n")
 
-    
-
     SelectRole = carte.pop() # Récupère et supprime le dernier élément de la liste
-
     print('Voici ton rôle :', SelectRole)
 
     desc(SelectRole)

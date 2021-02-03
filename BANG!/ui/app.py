@@ -11,11 +11,16 @@ window = Tk()
 window.title("BANG!")
 window.geometry("720x480")
 window.minsize(480, 360)
+<<<<<<< HEAD
+window.iconbitmap("C:/Users/gaeta/Desktop/Algo jeux de societé/BANG/BANG!/ui/logo.ico")
+window.config(background='#41B77F')
+=======
 window.iconbitmap("c:/Users/Paul/Desktop/YDAYS/Algo&Jeu de société/BANG!/ui/logo.ico")
 window.config(background='#F09316')
 
 #creer la frame
 frame = Frame(window, bg='#F09316')
+>>>>>>> 3517e959e9775f25df27fda64192d7ad087cbedd
 
 #ajouter un premier texte
 label_title = Label(frame, text="Bienvenue sur le jeu BANG !", font=("Western Bang Bang", 40), bg='#F09316', fg='white')
