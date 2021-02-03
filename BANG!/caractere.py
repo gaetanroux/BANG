@@ -29,6 +29,19 @@ def perso():
     print("\n")
 
     start = input("Quel carte choissez-vous ?")
+    SelectRole = caract.pop() # Récupère et supprime le dernier élément de la liste
+    
+
+    desc(SelectRole)
+
+def desc(SelectRole):
+    if int(SelectRole) == 1:
+        print ("Voici ton role : oui")
+    
+   # if SelectRole == caract 2
+    #print ("Voici ton role :"caract,2)
+
+        
     print("\n")
 #if int(start) == "Sam le vautour":
  #       print("Tu es Sam le vautour tu vas devoir ") 
