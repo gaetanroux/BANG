@@ -26,16 +26,17 @@ def perso():
     random.shuffle(caract)
     print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
     print(sample(caract,4))
+    
     print("\n")
 
-    start = input("Quel carte choissez-vous ?")
+    startcaract = input("Quel carte choissez-vous ?")
     SelectRole = caract.pop() # Récupère et supprime le dernier élément de la liste
     
 
-    desc(SelectRole)
+    #descri(SelectRole)
 
-def desc(SelectRole):
-    if int(SelectRole) == 1:
+    if  int(startcaract) == 1:
+        
         print ("Voici ton role : oui")
     
    # if SelectRole == caract 2
