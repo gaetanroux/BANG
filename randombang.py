@@ -30,6 +30,7 @@ def randoms(debutgame):
 
 def desc(SelectRole):
 
+
     # Aide pour connaître les rôles
     if SelectRole == "Hors-la-loi":
         print("Les Hors-la-loi gagnent la partie dès qu'ils ont éliminé le Shérif. En fonction du nombre de joueurs, il y a 2 ou 3 Hors-la-loi.\n")

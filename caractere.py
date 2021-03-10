@@ -1,6 +1,7 @@
 from random import *
 import random
 
+finalcaract = []
 
 caract = ["Bart Cassidy pv:4",
 "Kit Carlson pv:4",
@@ -24,27 +25,30 @@ caract = ["Bart Cassidy pv:4",
 def perso():
 
     random.shuffle(caract)
+
+    # We ask that as long as there are more than 12 elements in the array you copy and delete one element and then put it in a second array.
+    while (len(caract) > 12):
+        selectrole = caract.pop()
+        finalcaract.append(selectrole)
+        
     print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
-    print(sample(caract,4))
     
-    print("\n")
+    print(finalcaract)    
 
     startcaract = input("Quel carte choissez-vous ?")
-    SelectRole = caract.pop() # Récupère et supprime le dernier élément de la liste
-    
-
-    #descri(SelectRole)
-
-    if  int(startcaract) == 1:
+    selectrole = caract.pop() # Récupère et supprime le dernier élément de la liste
         
-        print ("Voici ton role : oui")
-    
-   # if SelectRole == caract 2
-    #print ("Voici ton role :"caract,2)
+    print("Voici ton rôle :")
 
-        
+    if startcaract == "1":
+        print(finalcaract[0])
+    if startcaract == "2":
+        print(finalcaract[1])
+    if startcaract == "3":
+        print(finalcaract[2])
+    elif startcaract == "4":
+        print(finalcaract[3])
+    
     print("\n")
-#if int(start) == "Sam le vautour":
- #       print("Tu es Sam le vautour tu vas devoir ") 
- #       exit()
+
 
