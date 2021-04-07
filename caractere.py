@@ -35,8 +35,19 @@ def perso():
     
     print(finalcaract)    
 
-    startcaract = input("Quel carte choissez-vous ?")
+    startcaract = input(" Joueur 1 : Quel carte choissez-vous ?")
     selectrole = caract.pop() # Récupère et supprime le dernier élément de la liste
+
+    random.shuffle(caract)
+
+    while (len(caract) > 12):
+        selectrole = caract.pop()
+        finalcaract.append(selectrole)
+    print("Maintenant que tout les rôles sont donner voici 4 personnages choisi en 1 :\n")
+    print(finalcaract)
+    startcaract = input(" Joueur 2 : Quel carte choissez-vous ?")
+    selectrole = caract.pop() # Récupère et supprime le dernier élément de la liste
+    
         
     print("Voici ton rôle :")
 
@@ -50,5 +61,6 @@ def perso():
         print(finalcaract[3])
     
     print("\n")
+    print("La partie peut maintenant commencer")
 
 
